@@ -1,0 +1,62 @@
+11:38:48.750 WARN  pageobjects.LoginPage -Logger Warning
+11:47:41.025 WARN  pageobjects.LoginPage -Logger Warning
+12:12:52.192 WARN  pageobjects.LoginPage -Logger Warning
+12:21:02.584 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:23:21.014 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:23:21.055 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+12:36:29.838 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:38:48.495 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:38:48.562 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+12:45:36.668 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:47:54.853 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:47:54.892 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+12:53:18.504 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:53:58.302 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:53:58.343 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:55:03.637 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:55:28.710 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:55:28.758 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:55:59.978 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+12:58:18.630 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+12:58:18.667 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+12:59:51.906 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:00:50.694 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:01:08.897 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:01:08.951 INFO  core.BaseTestPlan -Test Suite Execution Time: 1 minutes.
+13:01:26.138 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:01:26.173 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:02:43.858 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:03:14.095 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:03:14.130 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:21:12.262 WARN  pageobjects.LoginPage -Logger Warning
+13:22:03.639 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:25:04.857 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:25:35.772 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:25:35.800 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:28:06.555 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:28:41.479 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:28:41.520 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:28:56.489 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:29:31.281 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:29:31.329 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:56:05.040 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+13:58:37.419 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+13:58:37.468 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+14:08:48.338 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+14:12:27.306 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+14:12:27.343 INFO  core.BaseTestPlan -Test Suite Execution Time: 3 minutes.
+14:13:38.620 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+14:14:46.412 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+14:14:46.468 INFO  core.BaseTestPlan -Test Suite Execution Time: 1 minutes.
+14:35:47.826 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+14:36:29.290 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+14:36:29.845 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+14:40:36.370 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+14:40:50.428 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+14:40:58.820 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:46:42.245 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+14:47:15.118 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+14:47:15.356 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:15:40.643 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testLoginToApplication
+15:20:00.682 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testLoginToApplication
+15:20:00.734 INFO  core.BaseTestPlan -Test Suite Execution Time: 4 minutes.

@@ -1,0 +1,584 @@
+08:19:31.126 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Started..
+08:19:31.172 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+08:19:31.174 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+08:19:31.177 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+08:19:31.178 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+08:19:31.180 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Class Started..
+08:19:31.183 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+08:19:31.184 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+08:19:31.202 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+08:19:31.202 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+08:19:31.202 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Start method testNextisEnabled
+08:19:31.202 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Start method testIDVPageisDisplayed
+08:19:31.202 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+08:19:31.202 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+08:19:31.213 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+08:19:31.213 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+08:19:58.369 INFO  webelements.webBasePage -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+08:19:58.891 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+08:19:58.902 ERROR helpers.ExtentListener -testNextisEnabled failed
+08:19:58.920 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+08:20:00.224 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Finish method testNextisEnabled
+08:20:00.224 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+08:20:04.843 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+08:20:04.844 INFO  helpers.ExtentListener -testIDVPageisDisplayed succeeded
+08:20:04.848 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+08:20:05.875 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Finish method testIDVPageisDisplayed
+08:20:05.875 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+08:20:05.955 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Test Finished..
+08:20:06.638 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+08:20:06.639 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+08:20:06.639 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+08:20:06.646 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Finished..
+09:35:21.466 INFO  core.BaseTestPlan -Thread[main,5,main] Start method test
+09:35:21.476 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method test
+09:35:21.621 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:39:12.080 INFO  core.BaseTestPlan -Thread[main,5,main] Start method test
+09:39:12.095 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method test
+09:39:12.278 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:45:28.876 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+09:45:28.907 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+09:45:28.911 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+09:45:28.912 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+09:45:28.918 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+09:45:28.920 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+09:45:28.926 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+09:45:28.926 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+09:45:28.944 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:45:28.944 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+09:45:28.945 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:45:28.955 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:45:28.956 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:45:28.958 INFO  helpers.ExtentListener -test succeeded
+09:45:28.972 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:45:28.972 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+09:45:28.972 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:45:29.006 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+09:45:29.662 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+09:45:29.662 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:45:29.662 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+09:45:29.664 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+09:47:45.891 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+09:47:45.917 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+09:47:45.919 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+09:47:45.920 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+09:47:45.921 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+09:47:45.924 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+09:47:45.932 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+09:47:45.933 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+09:47:45.955 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.955 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+09:47:45.956 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.965 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.966 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.967 INFO  helpers.ExtentListener -test succeeded
+09:47:45.978 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:45.979 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+09:47:45.979 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:45.979 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.980 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+09:47:45.980 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.981 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.982 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.984 INFO  helpers.ExtentListener -test succeeded
+09:47:45.985 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:45.985 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+09:47:45.985 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:45.986 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.986 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+09:47:45.986 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+09:47:45.988 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.988 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+09:47:45.990 INFO  helpers.ExtentListener -test succeeded
+09:47:45.991 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:45.991 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+09:47:45.991 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+09:47:46.024 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+09:47:46.497 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+09:47:46.497 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:47:46.498 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+09:47:46.499 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:05:22.722 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:05:22.752 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:05:22.754 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:05:22.755 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:05:22.759 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:05:22.761 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:05:22.767 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:05:22.767 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:05:22.792 ERROR helpers.ExtentListener -test failed
+11:05:22.994 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:05:22.999 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:05:22.999 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:05:22.999 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:05:23.000 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:06:31.511 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:06:31.536 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:06:31.539 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:06:31.540 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:06:31.541 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:06:31.542 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:06:31.547 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:06:31.547 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:06:31.570 ERROR helpers.ExtentListener -test failed
+11:06:31.609 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:06:31.613 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:06:31.613 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:06:31.613 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:06:31.614 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:06:41.962 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:06:54.828 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:07:05.640 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:07:05.642 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:09:36.388 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:09:36.414 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:09:36.418 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:09:36.419 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:09:36.423 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:09:36.426 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:09:36.431 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:09:36.432 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:09:36.468 ERROR helpers.ExtentListener -test failed
+11:09:36.525 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:09:36.528 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:09:36.528 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:09:36.529 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:09:36.529 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:10:26.292 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:10:26.359 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:10:26.363 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:10:26.365 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:10:40.974 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:10:40.978 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:10:40.983 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:10:40.983 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:19:29.246 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:19:29.292 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:19:29.296 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:19:29.297 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:21:01.510 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:21:01.566 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:21:01.569 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:21:01.571 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:24:03.664 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:24:03.689 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:24:03.692 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:24:03.693 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:24:03.694 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:24:03.697 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:24:03.702 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:24:03.702 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:24:03.737 ERROR helpers.ExtentListener -test failed
+11:24:03.784 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:24:03.790 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:24:03.790 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:24:03.791 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:24:03.793 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:37:48.247 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:37:48.306 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:37:48.312 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:37:48.315 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:38:00.710 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:38:00.716 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:38:00.721 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:38:00.721 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:40:00.421 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:40:00.448 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:40:00.451 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:40:00.452 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:40:00.453 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:40:00.455 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:40:00.459 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:40:00.459 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:40:00.491 ERROR helpers.ExtentListener -test failed
+11:40:00.707 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:40:00.712 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:40:00.713 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:40:00.713 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:40:00.714 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:41:20.730 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:41:20.762 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:41:20.765 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:41:20.766 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:41:20.767 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:41:20.769 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:41:20.775 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:41:20.776 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:41:20.809 ERROR helpers.ExtentListener -test failed
+11:41:20.866 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:41:20.870 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:41:20.870 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:41:20.870 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:41:20.872 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:48:39.714 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:48:39.754 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:48:39.759 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:48:39.760 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:48:39.769 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:48:39.772 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:48:39.778 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:48:39.778 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:48:39.948 WARN  helpers.ExtentListener -test skipped
+11:48:40.012 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:48:40.018 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:48:40.018 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:48:40.019 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:48:40.023 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:50:23.199 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:50:23.249 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:50:23.254 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:50:23.255 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:50:23.257 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:50:23.260 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:50:23.266 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:50:23.266 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:50:23.586 WARN  helpers.ExtentListener -test skipped
+11:50:23.645 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:50:23.665 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:50:23.665 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:50:23.665 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:50:23.666 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:51:10.135 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:51:10.178 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:51:10.181 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:51:10.183 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:51:10.185 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:51:10.188 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:51:10.193 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:51:10.193 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:51:33.948 WARN  helpers.ExtentListener -test skipped
+11:51:37.478 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:51:37.483 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:51:37.484 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:51:37.484 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:51:37.484 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+11:52:29.798 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+11:52:29.849 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:52:29.853 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+11:52:29.854 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:52:29.856 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+11:52:29.859 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+11:52:29.864 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:52:29.864 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+11:55:59.485 WARN  helpers.ExtentListener -test skipped
+11:55:59.557 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+11:55:59.565 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:55:59.565 INFO  core.BaseTestPlan -Test Suite Execution Time: 3 minutes.
+11:55:59.565 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+11:55:59.566 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+12:48:04.805 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:48:04.831 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:48:04.834 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:48:04.835 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:48:04.838 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:48:04.840 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:48:04.844 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:48:04.845 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:48:05.591 ERROR helpers.ExtentListener -test failed
+12:48:05.698 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+12:48:05.707 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:48:05.707 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:48:05.707 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:48:05.708 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+12:52:27.312 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:52:27.341 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:52:27.344 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:52:27.345 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:52:27.346 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:52:27.348 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:52:27.351 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:52:27.351 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:52:28.261 ERROR helpers.ExtentListener -test failed
+12:52:28.312 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+12:52:28.315 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:52:28.316 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:52:28.316 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:52:28.318 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+12:54:09.719 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:54:09.754 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:54:09.758 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:54:09.759 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:54:09.761 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:54:09.763 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:54:09.767 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:54:09.767 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:54:10.538 ERROR helpers.ExtentListener -test failed
+12:54:10.593 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+12:54:10.597 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:54:10.597 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:54:10.597 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:54:10.598 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+12:56:37.243 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:56:37.274 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:56:37.277 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:56:37.278 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:56:37.279 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:56:37.281 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:56:37.286 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:56:37.287 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:59:04.168 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:59:04.198 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:59:04.201 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:59:04.202 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:59:04.203 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:59:04.205 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:59:04.209 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:59:04.209 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:59:04.925 ERROR helpers.ExtentListener -test failed
+12:59:04.972 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+12:59:04.975 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:59:04.975 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+12:59:04.976 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+12:59:04.977 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+12:59:29.167 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+12:59:29.213 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:59:29.216 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+12:59:29.217 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:59:29.218 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+12:59:29.221 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+12:59:29.226 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+12:59:29.227 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+13:02:41.892 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+13:02:41.934 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+13:02:41.939 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+13:02:41.941 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+13:02:41.943 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+13:02:41.946 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+13:02:41.951 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+13:02:41.952 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+13:06:15.954 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+13:06:15.988 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+13:06:15.991 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+13:06:15.992 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+13:06:15.993 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+13:06:15.998 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+13:06:16.003 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+13:06:16.003 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+13:06:16.889 ERROR helpers.ExtentListener -test failed
+13:06:16.955 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+13:06:16.968 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+13:06:16.968 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+13:06:16.968 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+13:06:16.972 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+14:36:34.363 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+14:36:34.388 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:36:34.391 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:36:34.392 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:36:34.393 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:36:34.395 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+14:36:34.399 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:36:34.399 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:36:35.329 ERROR helpers.ExtentListener -test failed
+14:36:35.383 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+14:36:35.387 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:36:35.387 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:36:35.387 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:36:35.388 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+14:40:31.098 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+14:40:31.130 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:40:31.133 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:40:31.134 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:40:31.135 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:40:31.138 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+14:40:31.143 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:40:31.144 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:41:47.829 ERROR helpers.ExtentListener -test failed
+14:42:58.975 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+14:42:58.978 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:42:58.978 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+14:42:58.978 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:42:58.979 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+14:44:15.672 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+14:44:15.751 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:44:15.758 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+14:44:15.761 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:44:15.766 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+14:44:15.770 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+14:44:15.778 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:44:15.779 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+14:44:17.296 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.296 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+14:44:17.296 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.321 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.323 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.327 INFO  helpers.ExtentListener -test succeeded
+14:44:17.342 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.342 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+14:44:17.342 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.343 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.344 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+14:44:17.344 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.346 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.347 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.349 INFO  helpers.ExtentListener -test succeeded
+14:44:17.350 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.350 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+14:44:17.351 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.352 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.352 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+14:44:17.352 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.355 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.356 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.358 INFO  helpers.ExtentListener -test succeeded
+14:44:17.360 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.360 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+14:44:17.361 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.363 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.363 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method test
+14:44:17.364 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+14:44:17.367 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.367 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => test
+14:44:17.370 INFO  helpers.ExtentListener -test succeeded
+14:44:17.372 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.372 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method test
+14:44:17.372 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+14:44:17.449 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+14:44:18.426 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:44:18.426 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:44:18.427 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+14:44:18.427 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+15:03:48.105 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Started..
+15:03:48.138 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:03:48.142 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:03:48.144 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:03:48.145 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:03:48.147 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Class Started..
+15:03:48.153 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:03:48.153 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:03:48.170 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:03:48.170 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:03:48.171 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Start method testIDVPageisDisplayed
+15:03:48.171 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Start method testNextisEnabled
+15:03:48.171 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:03:48.171 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:03:48.183 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:03:48.183 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:04:19.062 INFO  webelements.webBasePage -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+15:04:19.142 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:04:19.145 ERROR helpers.ExtentListener -testNextisEnabled failed
+15:04:19.159 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:04:20.079 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Finish method testNextisEnabled
+15:04:20.080 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:04:21.720 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:04:21.728 ERROR helpers.ExtentListener -testIDVPageisDisplayed failed
+15:04:21.731 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:04:22.656 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Finish method testIDVPageisDisplayed
+15:04:22.656 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:04:22.800 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Test Finished..
+15:04:23.517 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:04:23.518 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:04:23.518 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:04:23.519 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Finished..
+15:29:27.454 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Started..
+15:29:27.481 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+15:29:27.483 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestSuite
+15:29:27.484 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+15:29:27.485 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => setUpSelenium
+15:29:27.487 INFO  helpers.ExtentListener -WebTest - Data Provider test Class Started..
+15:29:27.491 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+15:29:27.492 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTest
+15:29:28.288 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.288 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method LoginTest
+15:29:28.288 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.300 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.302 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.303 INFO  helpers.ExtentListener -LoginTest succeeded
+15:29:28.314 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.314 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method LoginTest
+15:29:28.314 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.315 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.315 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method LoginTest
+15:29:28.315 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.318 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.318 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.322 INFO  helpers.ExtentListener -LoginTest succeeded
+15:29:28.323 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.323 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method LoginTest
+15:29:28.323 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.324 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.325 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method LoginTest
+15:29:28.325 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.326 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.327 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.333 INFO  helpers.ExtentListener -LoginTest succeeded
+15:29:28.336 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.336 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method LoginTest
+15:29:28.336 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.337 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.337 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Start method LoginTest
+15:29:28.337 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => beforeTestMethod
+15:29:28.339 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.339 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => LoginTest
+15:29:28.340 INFO  helpers.ExtentListener -LoginTest succeeded
+15:29:28.341 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.341 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Data Provider test-1,5,main] Finish method LoginTest
+15:29:28.341 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestMethod
+15:29:28.386 INFO  helpers.ExtentListener -WebTest - Data Provider test Test Finished..
+15:29:28.847 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+15:29:28.847 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:29:28.847 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_External_DataProvider => afterTestSuite
+15:29:28.849 INFO  helpers.ExtentListener -Selenium Web Framework with Data Provider Suite Finished..
+15:30:38.131 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Started..
+15:30:38.161 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:30:38.165 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:30:38.167 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:30:38.168 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:30:38.175 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Class Started..
+15:30:38.180 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:30:38.181 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:30:38.198 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:30:38.198 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:30:38.198 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Start method testNextisEnabled
+15:30:38.198 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Start method testIDVPageisDisplayed
+15:30:38.198 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:30:38.199 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:30:38.212 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:30:38.212 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:31:04.290 INFO  webelements.webBasePage -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+15:31:04.590 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:31:04.593 ERROR helpers.ExtentListener -testNextisEnabled failed
+15:31:04.609 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:31:05.797 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Finish method testNextisEnabled
+15:31:05.797 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:31:12.333 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:31:12.334 INFO  helpers.ExtentListener -testIDVPageisDisplayed succeeded
+15:31:12.338 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:31:13.353 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Finish method testIDVPageisDisplayed
+15:31:13.353 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:31:13.407 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Test Finished..
+15:31:13.913 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:31:13.914 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:31:13.914 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:31:13.916 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Finished..
+15:35:10.139 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Started..
+15:35:10.166 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:35:10.168 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestSuite
+15:35:10.169 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:35:10.170 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => setUpSelenium
+15:35:10.172 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Class Started..
+15:35:10.177 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:35:10.177 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTest
+15:35:10.195 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:35:10.195 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:35:10.195 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Start method testNextisEnabled
+15:35:10.195 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Start method testIDVPageisDisplayed
+15:35:10.195 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:35:10.195 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => beforeTestMethod
+15:35:10.207 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:35:10.208 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:35:36.925 INFO  webelements.webBasePage -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+15:35:37.015 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testNextisEnabled
+15:35:37.021 ERROR helpers.ExtentListener -testNextisEnabled failed
+15:35:37.037 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:35:38.475 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-2,5,main] Finish method testNextisEnabled
+15:35:38.475 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:35:45.304 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => testIDVPageisDisplayed
+15:35:45.306 INFO  helpers.ExtentListener -testIDVPageisDisplayed succeeded
+15:35:45.310 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:35:46.255 INFO  core.BaseTestPlan -Thread[TestNG-test=WebTest - Test Login Page in Chrome-1,5,main] Finish method testIDVPageisDisplayed
+15:35:46.255 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestMethod
+15:35:46.299 INFO  helpers.ExtentListener -WebTest - Test Login Page in Chrome Test Finished..
+15:35:46.805 INFO  helpers.ExtentListener - Before Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:35:46.806 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:35:46.806 INFO  helpers.ExtentListener - After Invocation..com.test.testscripts.TestNG_LoginPageTest => afterTestSuite
+15:35:46.808 INFO  helpers.ExtentListener -Selenium Web Framework Simple Test Parallel Suite Finished..

@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Selenium Framework Test Suite" parallel="false"
+	verbose="1" thread-count="3">
+	<listeners>
+		<listener class-name="com.uiframework.reporter.SeleniumTestsReporter" />
+		<!--  <listener class-name="com.uiframework.core.TestRetryListener" /> -->
+	</listeners>
+
+	<parameter name="appURL" value="https://identify1.business.barclaycard/login#gcpidvlogon"/>
+	<parameter name="runMode" value="LOCAL" /> <!--LOCAL or ExistingGrid -->
+ 	<parameter name="webDriverGrid" value="http://localhost:4444/wd/hub" />
+	<parameter name="webSessionTimeOut" value="120000" />
+	<parameter name="maxConcurrentWebSessions" value="5" />
+	<parameter name="softAssertEnabled" value="true" />
+    <!-- For soft assert, use assert APIs from  com.uiframework.core.CustomAssertion class-->
+    <parameter name="useFirefoxDefaultProfile" value="false"/>                                      
+
+    <test name="WebTest - Test Link Login Test in Chrome">
+        <!--testType parameter is optional for web test, since testType defaults to web-->
+        <parameter name="testType" value="Web" />
+       	<parameter name="browser" value="Chrome" />  <!--"*firefox, *chrome, *iexplore,*android"-->
+		<parameter name="eventFiringWebDriver" value="true"/>
+		<groups>
+			<run>
+				<include name="LoginTest"/>
+			</run>
+		</groups>
+        <classes>
+            <class name="com.test.testscripts.TestNG_LoginPageTest" />
+        </classes>
+    </test>
+
+
+ 
+</suite> 

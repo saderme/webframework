@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel LoginTest TestSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <!-- <listener class-name="com.framework.resources.RetryListener"></listener> -->
+        <listener class-name="com.framework.resources.ExtentListener"></listener>
+    </listeners>
+	<test name="Firefox Test">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class
+				name="com.application.testscripts.TestNG_LoginPageParallel_TestSuite"></class>
+		</classes>
+	</test>
+	<test name="Chrome Test">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class
+				name="com.application.testscripts.TestNG_LoginPageParallel_TestSuite"></class>
+		</classes>
+	</test>
+</suite>

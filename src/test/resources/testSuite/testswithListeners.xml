@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+    <listeners>
+        <!-- <listener class-name="com.framework.resources.RetryListener"></listener> -->
+        <listener class-name="com.framework.resources.ExtentListener"></listener>
+    </listeners>
+    <test name="Login Test">
+        <classes>
+            <class name="com.application.testscripts.TestNG_LoginPage_TestSuite"></class>
+        </classes>
+    </test>
+     <test name="Registration Test">
+        <classes>
+            <class name="com.application.testscripts.TestNG_RegistrationPage_TestSuite"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Selenium Web Framework with Factory and Data Provider" parallel="instances"
+	verbose="2" thread-count="3">
+  	<parameter name="testconfig" value="testconfig.properties" />  
+	<listeners>
+		<listener class-name="com.simplewebframework.helpers.ExtentListener" />		<!--  <listener class-name="com.uiframework.core.TestRetryListener" /> -->
+	</listeners>
+
+    <test name="WebTest - Factory with Data Provider test">
+       	<parameter name="browser" value="Chrome" />  
+        <classes>
+            <class name="com.test.testfactory.ex_ExternalDataProviderTest" />
+        </classes>
+    </test>
+ 
+</suite> 

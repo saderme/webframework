@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login TestSuite">
+<test name="Login Test">
+	<classes>
+		<class name="com.application.testscripts.TestNG_LoginPage_TestSuite"></class>
+	</classes>
+</test>
+</suite>

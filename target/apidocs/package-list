@@ -1,0 +1,8 @@
+com.simpleframework.application.dataprovider
+com.simplewebframework.application.pageobjects
+com.simplewebframework.browserfactory
+com.simplewebframework.configReader
+com.simplewebframework.core
+com.simplewebframework.customexception
+com.simplewebframework.helpers
+com.simplewebframework.webelements

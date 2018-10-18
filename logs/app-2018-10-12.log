@@ -1,0 +1,115 @@
+09:27:25.702 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+09:27:25.742 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+09:27:25.744 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+09:27:25.751 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+09:27:25.821 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:30:42.851 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+09:31:02.792 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+09:31:02.795 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+09:31:23.688 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+09:31:23.721 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:38:54.019 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+09:39:17.525 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+09:39:17.526 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+09:39:33.517 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+09:39:33.552 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:53:12.633 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+09:53:36.660 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+09:53:38.117 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+09:53:38.118 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+09:53:59.712 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+09:53:59.926 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+09:58:06.812 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+09:58:22.339 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+09:58:24.011 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+09:58:24.012 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+09:58:40.545 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+09:58:40.632 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:02:50.346 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:03:13.761 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+10:03:15.499 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:03:15.500 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:03:37.942 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:03:38.054 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:22:22.693 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:22:40.099 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+10:22:42.285 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:22:42.286 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:22:57.922 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:22:58.018 INFO  core.BaseTestPlan -Test Suite Execution Time: 2 minutes.
+10:25:22.684 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:25:23.089 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:25:23.090 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:25:23.196 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:25:23.241 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:27:13.699 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:27:13.732 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:27:13.733 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:27:13.736 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:27:14.155 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:44:43.055 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:45:01.417 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+10:45:02.579 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:45:02.581 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:45:19.488 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:45:20.162 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:49:48.999 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+10:50:05.042 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+10:50:05.962 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:50:05.965 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+10:50:21.482 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:50:22.082 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+10:52:41.266 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+10:52:41.285 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+10:52:41.340 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:03:14.558 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:03:14.577 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:03:14.627 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:05:44.764 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:05:44.781 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:05:45.023 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:08:10.279 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:08:10.291 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:08:10.331 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:10:56.927 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:10:56.949 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:10:57.051 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:11:37.660 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+11:11:54.787 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+11:11:55.716 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:11:55.721 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+11:12:12.156 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:12:12.702 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+11:41:00.128 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisabled
+11:41:16.996 INFO  webelements.webBasePage -Thread[main,5,main] assert buttonelement <a style="font-style:normal;color:#8C8984;text-decoration:none;" href=# ">Next Button,: By.id: nextBtn</a> is enabled.
+11:41:17.922 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisabled
+11:41:17.926 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testNextisDisplayed
+11:41:34.526 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testNextisDisplayed
+11:41:35.217 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:44:36.643 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+14:44:57.716 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+14:44:58.309 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:50:18.613 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+14:50:39.745 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+14:50:40.302 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:53:07.001 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+14:53:25.796 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+14:53:26.605 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+14:54:25.297 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+14:55:35.157 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+14:55:35.800 INFO  core.BaseTestPlan -Test Suite Execution Time: 1 minutes.
+14:56:34.220 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+14:56:52.186 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+14:56:52.757 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:00:18.850 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+15:00:37.358 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+15:00:41.920 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:05:57.170 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+15:06:15.964 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+15:06:16.644 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:11:05.362 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+15:11:24.001 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+15:11:24.475 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.
+15:22:24.158 INFO  core.BaseTestPlan -Thread[main,5,main] Start method testIDVPageisDisplayed
+15:22:42.540 INFO  core.BaseTestPlan -Thread[main,5,main] Finish method testIDVPageisDisplayed
+15:22:43.059 INFO  core.BaseTestPlan -Test Suite Execution Time: 0 minutes.

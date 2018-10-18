@@ -1,0 +1,16 @@
+08:52:26.785 INFO  helpers.ExtentListener -Selenium Web Framework with Factory and Data Provider Suite Started..
+08:52:26.800 INFO  helpers.ExtentListener -WebTest - Factory with Data Provider test Class Started..
+08:52:26.863 INFO  helpers.ExtentListener - Before Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodOne
+08:52:26.863 INFO  helpers.ExtentListener - Before Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodOne
+08:52:26.863 INFO  helpers.ExtentListener - After Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodOne
+08:52:26.863 INFO  helpers.ExtentListener - After Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodOne
+08:52:26.863 INFO  helpers.ExtentListener -testMethodOne succeeded
+08:52:26.878 INFO  helpers.ExtentListener -testMethodOne succeeded
+08:52:26.878 INFO  helpers.ExtentListener - Before Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodTwo
+08:52:26.878 INFO  helpers.ExtentListener - After Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodTwo
+08:52:26.894 INFO  helpers.ExtentListener - Before Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodTwo
+08:52:26.894 INFO  helpers.ExtentListener - After Invocation..com.test.testfactory.ExternalDataProviderTest => testMethodTwo
+08:52:26.894 INFO  helpers.ExtentListener -testMethodTwo succeeded
+08:52:26.894 INFO  helpers.ExtentListener -testMethodTwo succeeded
+08:52:26.941 INFO  helpers.ExtentListener -WebTest - Factory with Data Provider test Test Finished..
+08:52:27.378 INFO  helpers.ExtentListener -Selenium Web Framework with Factory and Data Provider Suite Finished..

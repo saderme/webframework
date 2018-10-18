@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Selenium Web Framework with Factory and Data Provider Suite Started..]]>
+    </line>
+    <line>
+      <![CDATA[WebTest - Factory with Data Provider test Class Started..]]>
+    </line>
+    <line>
+      <![CDATA[testMethodOne start]]>
+    </line>
+    <line>
+      <![CDATA[Selenium Web Framework with Factory and Data Provider Suite Started..]]>
+    </line>
+    <line>
+      <![CDATA[WebTest - Factory with Data Provider test Class Started..]]>
+    </line>
+    <line>
+      <![CDATA[testMethodOne start]]>
+    </line>
+    <line>
+      <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+    </line>
+    <line>
+      <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+    </line>
+    <line>
+      <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+    </line>
+    <line>
+      <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+    </line>
+    <line>
+      <![CDATA[testMethodOne succeeded]]>
+    </line>
+    <line>
+      <![CDATA[testMethodOne succeeded]]>
+    </line>
+    <line>
+      <![CDATA[testMethodTwo start]]>
+    </line>
+    <line>
+      <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+    </line>
+    <line>
+      <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+    </line>
+    <line>
+      <![CDATA[testMethodTwo start]]>
+    </line>
+    <line>
+      <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+    </line>
+    <line>
+      <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+    </line>
+    <line>
+      <![CDATA[testMethodTwo succeeded]]>
+    </line>
+    <line>
+      <![CDATA[testMethodTwo succeeded]]>
+    </line>
+  </reporter-output>
+  <suite name="Selenium Web Framework with Factory and Data Provider" duration-ms="94" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+    <groups>
+    </groups>
+    <test name="WebTest - Factory with Data Provider test" duration-ms="94" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+      <class name="com.test.testfactory.ExternalDataProviderTest">
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:com.test.testfactory.ExternalDataProviderTest@4b520ea8]" name="testMethodOne" duration-ms="32" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testMethodOne start]]>
+            </line>
+            <line>
+              <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+            </line>
+            <line>
+              <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+            </line>
+            <line>
+              <![CDATA[testMethodOne succeeded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:com.test.testfactory.ExternalDataProviderTest@5a5a729f]" name="testMethodOne" duration-ms="16" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testMethodOne start]]>
+            </line>
+            <line>
+              <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+            </line>
+            <line>
+              <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodOne]]>
+            </line>
+            <line>
+              <![CDATA[testMethodOne succeeded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:com.test.testfactory.ExternalDataProviderTest@4b520ea8]" name="testMethodTwo" duration-ms="16" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testMethodTwo start]]>
+            </line>
+            <line>
+              <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+            </line>
+            <line>
+              <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+            </line>
+            <line>
+              <![CDATA[testMethodTwo succeeded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:com.test.testfactory.ExternalDataProviderTest@5a5a729f]" name="testMethodTwo" duration-ms="0" started-at="2018-10-18T07:52:26Z" finished-at="2018-10-18T07:52:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testMethodTwo start]]>
+            </line>
+            <line>
+              <![CDATA[ Before Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+            </line>
+            <line>
+              <![CDATA[ After Invocation...com.test.testfactory.ExternalDataProviderTest => testMethodTwo]]>
+            </line>
+            <line>
+              <![CDATA[testMethodTwo succeeded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+      </class> <!-- com.test.testfactory.ExternalDataProviderTest -->
+    </test> <!-- WebTest - Factory with Data Provider test -->
+  </suite> <!-- Selenium Web Framework with Factory and Data Provider -->
+</testng-results>

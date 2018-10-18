@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Selenium Web Framework Simple Test]" parallel="tests">
+  <parameter name="testconfig" value="testconfig.properties"/>
+  <test thread-count="3" name="WebTest - Test Login Page in Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.testscripts.TestNG_LoginPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="testNextisEnabled"/>
+          <include name="afterTestSuite"/>
+          <include name="setUpSelenium"/>
+          <include name="afterTestMethod"/>
+          <include name="beforeTestSuite"/>
+          <include name="beforeTestMethod"/>
+        </methods>
+      </class> <!-- com.test.testscripts.TestNG_LoginPageTest -->
+    </classes>
+  </test> <!-- WebTest - Test Login Page in Chrome(failed) -->
+</suite> <!-- Failed suite [Selenium Web Framework Simple Test] -->

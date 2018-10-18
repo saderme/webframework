@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Selenium Web Framework Simple Test Parallel" parallel="methods"
+	verbose="2" thread-count="3">
+  	<parameter name="testconfig" value="testconfig.properties" />  
+	<listeners>
+		<!-- <listener class-name="com.simplewebframework.reporter.SeleniumTestsReporter" /> -->
+		<!--  <listener class-name="com.uiframework.core.TestRetryListener" /> -->
+	</listeners>
+
+    <test name="WebTest - Test Login Page in Chrome">
+       	<parameter name="browser" value="Chrome" />  
+        <classes>
+            <class name="com.test.testscripts.TestNG_LoginPageTest" />
+        </classes>
+    </test>
+ 
+</suite> 
