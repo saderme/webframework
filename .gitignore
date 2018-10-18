@@ -1,1 +1,5 @@
-/target/
+/target
+/logs
+/test-output
+*.log
+*.out
