@@ -1,8 +1,6 @@
 package com.test.testscripts;
 
 import org.testng.annotations.Test;
-
-
 import com.application.dataprovider.DataProviderCentral;
 import com.simplewebframework.core.BaseTestPlan;
 /* The data provider class is stored in a separate external class which is specified by the dataProviderClass variable*/

@@ -35,5 +35,9 @@ public class TestConfig {
  		TestConfig.APP_URL = ObjectReader.reader.getUrl();  	
  		TestConfig.PAGE_LOAD_TIMEOUT = ObjectReader.reader.getPageLoadTime();  	    	
     }
+    
+    public static String getConfigPath(){
+    	return TEST_DATA_PATH;
+    }
      
 }

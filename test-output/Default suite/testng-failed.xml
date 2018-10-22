@@ -3,17 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.testscripts.TestNG_External_DataProvider">
+      <class name="com.test.testfactory.ex_TestFactory$TestInstance">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTestSuite"/>
-          <include name="setUpSelenium"/>
-          <include name="afterTestMethod"/>
-          <include name="beforeTestSuite"/>
-          <include name="beforeTestMethod"/>
-          <include name="test"/>
+          <include name="testMethod1"/>
+          <include name="testMethod1"/>
+          <include name="testMethod1"/>
+          <include name="testMethod1"/>
+          <include name="testMethod1"/>
+          <include name="testMethod2"/>
+          <include name="testMethod2"/>
+          <include name="testMethod2"/>
+          <include name="testMethod2"/>
+          <include name="testMethod2"/>
         </methods>
-      </class> <!-- com.test.testscripts.TestNG_External_DataProvider -->
+      </class> <!-- com.test.testfactory.ex_TestFactory$TestInstance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

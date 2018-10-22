@@ -12,13 +12,13 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.application.dataprovider.BBOSTestAccount;
 import com.simplewebframework.core.TestLogger;
 
 public class ExcelHelper {
 
 	private Logger log = TestLogger.getLogger(ExcelHelper.class);
-	
-	
+
 	public static Object[][] getExcelData(String excelLocation, String sheetName) {
 
 		try {
@@ -58,60 +58,60 @@ public class ExcelHelper {
 		}
 		return null;
 	}
-	public static Object[][] getExcelData2(String excelLocation, String sheetName) {
-
+	
+	public static Object[][] getExcelDataToBBOS(String excelLocation, String sheetName) {
 		try {
 			Object dataSets[][] = null;
 			FileInputStream file = new FileInputStream(new File(excelLocation));
-			// Create Workbook instance
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
-
-			// Get sheet Name from Workbook
 			XSSFSheet sheet = workbook.getSheet(sheetName);
-
-			// count number of active rows in excel sheet
 			int totalRow = sheet.getLastRowNum();
-            System.out.println(totalRow);
-			// count active columns in row
 			int totalColumn = sheet.getRow(0).getLastCellNum();
 
-			dataSets = new Object[totalRow][totalColumn-1];
+			dataSets = new Object[totalRow+1][1];
 
 			// Iterate Through each Rows one by one.
 			Iterator<Row> rowIterator = sheet.iterator();
 			int i = 0;
 			while (rowIterator.hasNext()) {
 				i++;
+				BBOSTestAccount bbta = new BBOSTestAccount();
+				
 				// for Every row , we need to iterator over columns
 				Row row = rowIterator.next();
 				Iterator<Cell> cellIterator = row.cellIterator();
 				int j = 0;
+				String login = "";
+				String email= "";
+				String password= "";
+				String runmode= "";
+				
 				while (cellIterator.hasNext()) {
-					
 					Cell cell = cellIterator.next();
-					if (cell.getStringCellValue().contains("Start")) {
-						i = 0;
-						break;
-					}
-					switch (cell.getCellType()) {
-					case STRING:
-						dataSets[i-1][j++] = cell.getStringCellValue();
-						break;
-					case NUMERIC:
-						dataSets[i-1][j++] = cell.getNumericCellValue();
-						break;
-					case BOOLEAN:
-						dataSets[i-1][j++] = cell.getBooleanCellValue();
-					case FORMULA:
-						dataSets[i-1][j++] = cell.getCellFormula();
-						break;
 
-					default:
-						dataSets[i-1][j++] = cell.getStringCellValue();
-						//System.out.println("no matching enum date type found");
+					
+					switch (j) {
+					case 0:
+						login = cell.getStringCellValue();
+						//bbta.setLogin(cell.getStringCellValue());
+						break;
+					case 1:
+						email = cell.getStringCellValue();
+						//bbta.setEmail(cell.getStringCellValue());
+						break;
+					case 2:
+						password = cell.getStringCellValue();
+						//bbta.setPassword(cell.getStringCellValue());
+						break;
+					case 3:
+						runmode = cell.getStringCellValue();
+						//bbta.setRunMode(cell.getStringCellValue());	
 						break;
 					}
+					j++;
 				}
+				//dataSets[i-1][0] = bbta;
+				dataSets[i-1][0] = new BBOSTestAccount(login,email,password,runmode);
 			}
 			return dataSets;
 		} catch (Exception e) {
@@ -119,6 +119,7 @@ public class ExcelHelper {
 		}
 		return null;
 	}
+
 	public void updateResult(String excelLocation, String sheetName, String testCaseName, String testStatus){
 		try{
 			FileInputStream file = new FileInputStream(new File(excelLocation));
@@ -158,5 +159,6 @@ public class ExcelHelper {
 //	 excelHelper.updateResult(excelLocation, "TestScripts", "Add to Cart", "PASS");
 	 
 	}
+
 }
 

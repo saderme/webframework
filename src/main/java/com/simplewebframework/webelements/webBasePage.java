@@ -29,7 +29,7 @@ public abstract class webBasePage {
 	protected AppConfig con = new AppConfig("appconfig.properties");
 	protected WebDriver driver = WebUIDriver.getWebDriver();
 	protected final WebUIDriver webUXDriver = WebUIDriver.getWebUIDriver();
-	private static final Logger logger = TestLogger.getLogger(webBasePage.class);
+	private static final Logger applog = TestLogger.getLogger(webBasePage.class);
 	
 	public webBasePage() {
 	}
@@ -117,14 +117,14 @@ public abstract class webBasePage {
 	}
 
 	public void assertElementEnabled(final HtmlElement element) {
-        logger.info(Thread.currentThread() + " assert " + element.toHTML() + " is enabled.");
+		applog.info(Thread.currentThread() + " assert " + element.toHTML() + " is enabled.");
 		TestLogger.logInfo("assert " + element.toHTML() + " is enabled.");
 		
 		assertHTML(element.isEnabled(), element.toString() + " not found.");
 	}
 
 	public void assertElementNotEnabled(final HtmlElement element) {
-        logger.info(Thread.currentThread() + " assert " + element.toHTML() + " is not enabled.");
+		applog.info(Thread.currentThread() + " assert " + element.toHTML() + " is not enabled.");
 		TestLogger.logInfo("assert " + element.toHTML() + " is not enabled.");
 		assertHTML(!element.isEnabled(), element.toString() + " not found.");
 	}

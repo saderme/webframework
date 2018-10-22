@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Selenium Web Framework Simple Test Parallel]" parallel="methods">
-  <parameter name="testconfig" value="testconfig.properties"/>
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Selenium Web Framework with Factory and Data Provider]" parallel="instances">
   <listeners>
-    <listener class-name="com.simplewebframework.helpers.ExtentListener"/>
+    <listener class-name="com.simplewebframework.extent.ExtentListener"/>
   </listeners>
-  <test thread-count="3" verbose="10" name="WebTest - Test Login Page in Chrome(failed)" parallel="methods">
+  <test thread-count="3" verbose="2" name="WebTest - Factory with Data Provider test(failed)" parallel="instances">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.test.testscripts.TestNG_LoginPageTest">
+      <class name="com.test.testscripts.testfactory.TestNG_Factory_DataProvider">
         <methods>
           <include name="beforeTest"/>
-          <include name="testNextisEnabled"/>
           <include name="afterTestSuite"/>
-          <include name="setUpSelenium"/>
           <include name="afterTestMethod"/>
+          <include name="testNextisEnabled"/>
+          <include name="testNextisEnabled"/>
+          <include name="testNextisEnabled"/>
           <include name="beforeTestSuite"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- com.test.testscripts.TestNG_LoginPageTest -->
+      </class> <!-- com.test.testscripts.testfactory.TestNG_Factory_DataProvider -->
     </classes>
-  </test> <!-- WebTest - Test Login Page in Chrome(failed) -->
-</suite> <!-- Failed suite [Selenium Web Framework Simple Test Parallel] -->
+  </test> <!-- WebTest - Factory with Data Provider test(failed) -->
+</suite> <!-- Failed suite [Selenium Web Framework with Factory and Data Provider] -->
