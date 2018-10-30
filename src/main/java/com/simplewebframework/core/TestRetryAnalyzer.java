@@ -38,7 +38,7 @@ public class TestRetryAnalyzer implements IRetryAnalyzer {
     public boolean retry(final ITestResult result) {
         boolean retry = false;
         if (isRetryAvailable()) {
-            TestLogger.logInfo("<br> Going to retry test case: " + result.getMethod() + ", " + (MAX_RETRY_COUNT - count + 1) + " out of " + MAX_RETRY_COUNT + "</br>");
+            TestLogger.logRepInfo("<br> Going to retry test case: " + result.getMethod() + ", " + (MAX_RETRY_COUNT - count + 1) + " out of " + MAX_RETRY_COUNT + "</br>");
             retry = true;
             count = count-1;
         }

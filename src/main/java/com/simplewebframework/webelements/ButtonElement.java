@@ -19,9 +19,9 @@ public class ButtonElement extends HtmlElement {
 
     @Override
     public void click() {
-        TestLogger.logInfo("click on " + toHTML());
+        TestLogger.logRepInfo("click on " + toHTML());
 
-        BrowserType browser = WebUIDriver.getConfig().getBrowser();
+        BrowserType browser = WebUIDriver.getBrowserType();
         if (browser == BrowserType.InternetExplore) {
             super.sendKeys(Keys.ENTER);
         } else {
@@ -30,7 +30,7 @@ public class ButtonElement extends HtmlElement {
     }
 
     public void submit() {
-    	TestLogger.logInfo("Submit form by clicking on " + toHTML());
+    	TestLogger.logRepInfo("Submit form by clicking on " + toHTML());
         findElement();
         element.submit();
     }

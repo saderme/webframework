@@ -3,20 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.testfactory.ex_TestFactory$TestInstance">
+      <class name="com.test.testscripts.testfactory.ex_DataProviderTest">
         <methods>
-          <include name="testMethod1"/>
-          <include name="testMethod1"/>
-          <include name="testMethod1"/>
-          <include name="testMethod1"/>
-          <include name="testMethod1"/>
-          <include name="testMethod2"/>
-          <include name="testMethod2"/>
-          <include name="testMethod2"/>
-          <include name="testMethod2"/>
-          <include name="testMethod2"/>
+          <include name="beforeTest"/>
+          <include name="afterTestSuite"/>
+          <include name="testMethodTwo"/>
+          <include name="testMethodTwo"/>
+          <include name="afterTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTestSuite"/>
+          <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- com.test.testfactory.ex_TestFactory$TestInstance -->
+      </class> <!-- com.test.testscripts.testfactory.ex_DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

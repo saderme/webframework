@@ -13,6 +13,7 @@
 
 package com.simplewebframework.webelements;
 
+import java.util.Calendar;
 import java.util.List;
 
 import org.apache.logging.log4j.Logger;
@@ -56,7 +57,7 @@ public class HtmlElement {
     }
 
     protected WebDriver driver = WebUIDriver.getWebDriver();
-    protected WebUIDriver webUXDriver = WebUIDriver.getWebUIDriver();
+   // protected WebUIDriver webUXDriver = WebUIDriver.getWebUIDriver();
     protected WebElement element = null;
     private String label = null;
     private String locator = null;
@@ -128,7 +129,7 @@ public class HtmlElement {
      * @param  value
      */
     public void clickAt(final String value) {
-        TestLogger.logInfo("click on " + toHTML());
+        TestLogger.logRepInfo("click on " + toHTML());
         findElement();
 
         final String[] parts = value.split(",");
@@ -144,8 +145,7 @@ public class HtmlElement {
         }
 
         try {
-            final BrowserType type = WebUIDriver.getWebUIDriver().getConfig()
-                .getBrowser();
+            final BrowserType type = WebUIDriver.getBrowserType();
 
             if (((type == BrowserType.Chrome) ||
                         (type == BrowserType.InternetExplore)) &&
@@ -158,6 +158,31 @@ public class HtmlElement {
         }
     }
 
+    public void clickSpecificValuefromDropDown(WebElement dropdown, final By findby, String selectValue) {
+    	List<WebElement> ddentries = (List<WebElement>) dropdown.findElements(findby);
+    	
+    	for (WebElement ddentry:ddentries) {
+    		if (ddentry.getText().equals(selectValue)){
+    			ddentry.click();
+    			break;
+    		}
+     	}
+    }
+    
+    public void clickSpecificDatefromCalendar(WebElement calendar, final By findby, String selectValue) {
+    	List<WebElement> dates = (List<WebElement>) calendar.findElements(findby);
+    	
+    	Calendar cal = Calendar.getInstance();
+    	//int dayofmonth = cal.get(Calendar.DAY_OF_MONTH);
+    	//String domstr = String.valueOf(dayofmonth);
+    	
+    	for (WebElement date:dates) {
+    		if (date.getText().equals(selectValue)){
+    			date.click();
+    			break;
+    		}
+     	}
+    }  
     public void simulateClick() {
         findElement();
 
@@ -434,7 +459,7 @@ public class HtmlElement {
     public boolean isElementPresent() {
 
         if (WebUIDriver.getWebDriver() == null) {
-        	TestLogger.logInfo("Web Driver is terminated! Exception might caught in last action.");
+        	TestLogger.logRepInfo("Web Driver is terminated! Exception might caught in last action.");
             throw new RuntimeException(
                 "Web Driver is terminated! Exception might caught in last action.");
         }
@@ -447,13 +472,13 @@ public class HtmlElement {
         } catch (final RuntimeException e) {
 
             if (e instanceof InvalidSelectorException) {
-            	TestLogger.logInfo("Got InvalidSelectorException, retry");
+            	TestLogger.logRepInfo("Got InvalidSelectorException, retry");
                 WaitHelper.waitForSeconds(2);
                 count = WebUIDriver.getWebDriver().findElements(by).size();
             } else if ((e.getMessage() != null) &&
                     e.getMessage().contains(
                         "TransformedEntriesMap cannot be cast to java.util.List")) {
-            	TestLogger.logInfo("Got CastException, retry");
+            	TestLogger.logRepInfo("Got CastException, retry");
                 WaitHelper.waitForSeconds(2);
                 count = WebUIDriver.getWebDriver().findElements(by).size();
             } else {
@@ -507,7 +532,7 @@ public class HtmlElement {
      * Forces a mouseDown event on the WebElement.
      */
     public void mouseDown() {
-    	TestLogger.logInfo("MouseDown " + this.toString());
+    	TestLogger.logRepInfo("MouseDown " + this.toString());
         findElement();
 
         final Mouse mouse = ((HasInputDevices) driver).getMouse();
@@ -518,7 +543,7 @@ public class HtmlElement {
      * Forces a mouseOver event on the WebElement.
      */
     public void mouseOver() {
-    	TestLogger.logInfo("MouseOver " + this.toString());
+    	TestLogger.logRepInfo("MouseOver " + this.toString());
         findElement();
 
         // build and perform the mouseOver with Advanced User Interactions API
@@ -545,7 +570,7 @@ public class HtmlElement {
      * Forces a mouseUp event on the WebElement.
      */
     public void mouseUp() {
-    	TestLogger.logInfo("MouseUp " + this.toString());
+    	TestLogger.logRepInfo("MouseUp " + this.toString());
         findElement();
 
         final Mouse mouse = ((HasInputDevices) driver).getMouse();
@@ -601,7 +626,7 @@ public class HtmlElement {
      * which needs long time to present.
      */
     public void waitForPresent(final int timeout) {
-    	TestLogger.logInfo("wait for " + this.toString() + " to present.");
+    	TestLogger.logRepInfo("wait for " + this.toString() + " to present.");
 
         final Wait<WebDriver> wait = new WebDriverWait(driver, timeout);
         wait.until(new ExpectedCondition<WebElement>() {

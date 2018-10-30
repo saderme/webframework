@@ -13,7 +13,7 @@
 
 package com.simplewebframework.core;
 
-public enum BrowserType {
+public enum BrowserType{
     FireFox("Firefox"),
     Marionette("Marionette"),
     InternetExplore("InternetExplore"),
@@ -24,46 +24,45 @@ public enum BrowserType {
     IPhone("IPhone"),
     PhantomJS("PhantomJS"),
     SauceLabs("SauceLab");
-
 	
-    public static BrowserType getBrowserType(final String browserType) {
-        if (browserType.equalsIgnoreCase("firefox")) {
+    private String browserStrVal;
+	
+    public static BrowserType getBrowserType(final String BrowserStr) {
+        if (BrowserStr.equalsIgnoreCase("firefox")) {
             return BrowserType.FireFox;
-        }if (browserType.equalsIgnoreCase("marionette")) {
+        }if (BrowserStr.equalsIgnoreCase("marionette")) {
             return BrowserType.Marionette;
-        } else if (browserType.equalsIgnoreCase("iexplore")) {
+        } else if (BrowserStr.equalsIgnoreCase("iexplore")) {
             return BrowserType.InternetExplore;
-        } else if (browserType.equalsIgnoreCase("chrome")) {
+        } else if (BrowserStr.equalsIgnoreCase("chrome")) {
             return BrowserType.Chrome;
-        } else if (browserType.equalsIgnoreCase("htmlunit")) {
+        } else if (BrowserStr.equalsIgnoreCase("htmlunit")) {
             return BrowserType.HtmlUnit;
-        } else if (browserType.equalsIgnoreCase("safari")) {
+        } else if (BrowserStr.equalsIgnoreCase("safari")) {
             return BrowserType.Safari;
-        } else if (browserType.equalsIgnoreCase("android")) {
+        } else if (BrowserStr.equalsIgnoreCase("android")) {
             return BrowserType.Android;
-        } else if (browserType.equalsIgnoreCase("iphone")) {
+        } else if (BrowserStr.equalsIgnoreCase("iphone")) {
             return BrowserType.IPhone;
-        }else if (browserType.equalsIgnoreCase("phantomjs")) {
+        }else if (BrowserStr.equalsIgnoreCase("phantomjs")) {
             return BrowserType.PhantomJS;
-        } else if (browserType.equalsIgnoreCase("saucelabs")) {
+        } else if (BrowserStr.equalsIgnoreCase("saucelabs")) {
             return BrowserType.SauceLabs;
         } else {
             return BrowserType.Chrome;
         }
     }
-
-    private String browserType;
 	
     BrowserType(final String type) {
-        this.browserType = type;
+        this.browserStrVal = type;
     }
 
-    public String getBrowserType() {
-        return this.browserType;
+    public String getBrowserStrVal() {
+        return browserStrVal;
     }
     
-    public void setBrowserType(String type) {
-        browserType = type;
+    public void setBrowserStrVal(String type) {
+    	browserStrVal = type;
     }
 
 }

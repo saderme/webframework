@@ -49,7 +49,7 @@ public class webPageObject extends webBasePage implements IPage {
 	private String imageFilePath = null;
 	
 	public webPageObject() throws Exception {
-		driver = WebUIDriver.getWebDriver(true);
+		//driver = WebUIDriver.getWebDriver();
 
 		if (url == null) {
 			url = AppConfig.APP_URL;
@@ -85,13 +85,13 @@ public class webPageObject extends webBasePage implements IPage {
 	}
 
 	public final void goBack() {
-		TestLogger.logInfo("goBack");
+		TestLogger.logRepInfo("goBack");
 		driver.navigate().back();
 		frameFlag = false;
 	}
 
 	public final void goForward() {
-		TestLogger.logInfo("goForward");
+		TestLogger.logRepInfo("goForward");
 		driver.navigate().forward();
 		frameFlag = false;
 	}
@@ -107,8 +107,8 @@ public class webPageObject extends webBasePage implements IPage {
 	private void open(final String url) throws Exception {
 
 		if (this.getDriver() == null) {
-			TestLogger.logInfo("Launch application");
-			driver = webUXDriver.createWebDriver();
+			TestLogger.logRepInfo("Launch application");
+			driver = WebUIDriver.createDriver("Chrome");
 		}
 
 		setUrl(url);
@@ -118,19 +118,19 @@ public class webPageObject extends webBasePage implements IPage {
 		} catch (final UnreachableBrowserException e) {
 
 			// handle if the last window is closed
-			TestLogger.logInfo("Launch application");
-			driver = webUXDriver.createWebDriver();
+			TestLogger.logRepInfo("Launch application");
+			driver = WebUIDriver.createDriver("Chrome");
 			maximizeWindow();
 			driver.navigate().to(url);
 		} catch (final UnsupportedCommandException e) {
-			TestLogger.logInfo("get UnsupportedCommandException, retry");
-			driver = webUXDriver.createWebDriver();
+			TestLogger.logRepInfo("get UnsupportedCommandException, retry");
+			driver = WebUIDriver.createDriver("Chrome");
 			maximizeWindow();
 			driver.navigate().to(url);
 		} catch (final org.openqa.selenium.TimeoutException ex) {
-			TestLogger.logInfo("got time out when loading " + url + ", ignored");
+			TestLogger.logRepInfo("got time out when loading " + url + ", ignored");
 		} catch (final org.openqa.selenium.UnhandledAlertException ex) {
-			TestLogger.logInfo("got UnhandledAlertException, retry");
+			TestLogger.logRepInfo("got UnhandledAlertException, retry");
 			driver.navigate().to(url);
 		} catch (final Throwable e) {
 			e.printStackTrace();
@@ -163,12 +163,12 @@ public class webPageObject extends webBasePage implements IPage {
 	}
 
 	public final void refresh() throws NotCurrentPageException {
-		TestLogger.logInfo("refresh");
+		TestLogger.logRepInfo("refresh");
 
 		try {
 			driver.navigate().refresh();
 		} catch (final org.openqa.selenium.TimeoutException ex) {
-			TestLogger.logInfo("got time out customexception, ignore");
+			TestLogger.logRepInfo("got time out customexception, ignore");
 		}
 	}
 
@@ -177,25 +177,25 @@ public class webPageObject extends webBasePage implements IPage {
 	}
 
 	public final void selectFrame(final int index) {
-		TestLogger.logInfo("select frame using index" + index);
+		TestLogger.logRepInfo("select frame using index" + index);
 		driver.switchTo().frame(index);
 		frameFlag = true;
 	}
 
 	public final void selectFrame(final By by) {
-		TestLogger.logInfo("select frame, locator={\"" + by.toString() + "\"}");
+		TestLogger.logRepInfo("select frame, locator={\"" + by.toString() + "\"}");
 		driver.switchTo().frame(driver.findElement(by));
 		frameFlag = true;
 	}
 
 	public final void selectFrame(final String locator) {
-		TestLogger.logInfo("select frame, locator={\"" + locator + "\"}");
+		TestLogger.logRepInfo("select frame, locator={\"" + locator + "\"}");
 		driver.switchTo().frame(locator);
 		frameFlag = true;
 	}
 
 	public final void selectWindow() throws NotCurrentPageException {
-		TestLogger.logInfo("select window, locator={\"" + getPopupWindowName() + "\"}");
+		TestLogger.logRepInfo("select window, locator={\"" + getPopupWindowName() + "\"}");
 
 		// selectWindow(getPopupWindowName());
 		driver.switchTo().window((String) driver.getWindowHandles().toArray()[0]);
@@ -206,12 +206,12 @@ public class webPageObject extends webBasePage implements IPage {
 	}
 
 	public final void selectWindow(final int index) throws NotCurrentPageException {
-		TestLogger.logInfo("select window, locator={\"" + index + "\"}");
+		TestLogger.logRepInfo("select window, locator={\"" + index + "\"}");
 		driver.switchTo().window((String) driver.getWindowHandles().toArray()[index]);
 	}
 
 	public final void selectNewWindow() throws NotCurrentPageException {
-		TestLogger.logInfo("select new window");
+		TestLogger.logRepInfo("select new window");
 		driver.switchTo().window((String) driver.getWindowHandles().toArray()[1]);
 		waitForSeconds(1);
 	}
@@ -275,7 +275,7 @@ public class webPageObject extends webBasePage implements IPage {
 		try {
 			element = driver.findElement(by);
 		} catch (final ElementNotFoundException e) {
-			TestLogger.logError(elementName + " is not found with locator - " + by.toString());
+			TestLogger.logRepError(elementName + " is not found with locator - " + by.toString());
 			throw e;
 		}
 

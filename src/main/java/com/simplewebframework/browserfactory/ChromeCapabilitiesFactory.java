@@ -22,82 +22,31 @@ import com.simplewebframework.configClass.DriverConfig;
 
 public class ChromeCapabilitiesFactory implements ICapabilitiesFactory {
 
-    public DesiredCapabilities createCapabilities(final DriverConfig webDriverConfig) {
+	public DesiredCapabilities createCapabilities() {
 
-        DesiredCapabilities capability = null;
-        capability = DesiredCapabilities.chrome();
-        capability.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+		DesiredCapabilities capability = null;
+		capability = DesiredCapabilities.chrome();
+		capability.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
 
-        ChromeOptions options = new ChromeOptions();
-/*        if (webDriverConfig.getUserAgentOverride() != null) {
-            options.addArguments("--user-agent=" + webDriverConfig.getUserAgentOverride());
-        }*/
+		ChromeOptions options = new ChromeOptions();
+		capability.setCapability(ChromeOptions.CAPABILITY, options);
+		capability.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
+		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
-        capability.setCapability(ChromeOptions.CAPABILITY, options);
+		if (AppConfig.DRIVER_BIN_PATH != null) {
+			capability.setCapability("chrome.binary", AppConfig.DRIVER_BIN_PATH);
+		}
 
-/*        if (webDriverConfig.isEnableJavascript()) {
-            capability.setJavascriptEnabled(true);
-        } else {
-            capability.setJavascriptEnabled(false);
-        }*/
+		String chromeDriverPath = AppConfig.DRIVER_BIN_PATH;
+		if (chromeDriverPath == null) {
+			if (System.getenv("webdriver.chrome.driver") != null) {
+				System.out.println("get Chrome driver from property:" + System.getenv("webdriver.chrome.driver"));
+				System.setProperty("webdriver.chrome.driver", System.getenv("webdriver.chrome.driver"));
+			}
+		} else {
+			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		}
 
-        capability.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
-        capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-
-/*        if (webDriverConfig.getBrowserVersion() != null) {
-            capability.setVersion(webDriverConfig.getBrowserVersion());
-        }
-
-        if (webDriverConfig.getWebPlatform() != null) {
-            capability.setPlatform(webDriverConfig.getWebPlatform());
-        }
-
-        if (webDriverConfig.getProxyHost() != null) {
-            Proxy proxy = webDriverConfig.getProxy();
-            capability.setCapability(CapabilityType.PROXY, proxy);
-        }*/
-
-        if (AppConfig.DRIVER_BIN_PATH != null) {
-            capability.setCapability("chrome.binary", AppConfig.DRIVER_BIN_PATH);
-        }
-
-        // Set ChromeDriver for local mode
-   //     if (webDriverConfig.getMode() == DriverMode.LOCAL) {
-            String chromeDriverPath = AppConfig.DRIVER_BIN_PATH;
-            if (chromeDriverPath == null) {
-                if (System.getenv("webdriver.chrome.driver") != null) {
-				    System.out.println("get Chrome driver from property:" + System.getenv("webdriver.chrome.driver"));
-				    System.setProperty("webdriver.chrome.driver", System.getenv("webdriver.chrome.driver"));
-				} 
-            } else {
-                System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-            }
-   //     }
-
-        return capability;
-    }
-
- /*   public void handleExtractResources() throws IOException {
-        String dir = this.getClass().getResource("/").getPath();
-        dir = FileUtility.decodePath(dir);
-
-        if (!new File(dir).exists()) {
-            System.out.println("extracting chrome resources in " + dir);
-            FileUtility.extractJar(dir, WebDriverExternalResources.class);
-        }
-
-        if (!new File(dir + OSUtility.getSlash() + "chromedriver.exe").exists()) {
-            FileUtility.extractJar(dir, WebDriverExternalResources.class);
-        }
-
-        if (OSUtility.isWindows()) {
-            System.setProperty("webdriver.chrome.driver", dir + "\\chromedriver.exe");
-        } else if (OSUtility.isMac()) {
-            System.setProperty("webdriver.chrome.driver", dir + "/mac/chromedriver");
-        } else {
-            System.setProperty("webdriver.chrome.driver", dir + "/chromedriver");
-            new File(dir + "/chromedriver").setExecutable(true);
-        }
-    }*/
-
+		return capability;
+	}
 }

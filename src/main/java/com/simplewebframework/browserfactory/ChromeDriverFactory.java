@@ -26,20 +26,19 @@ import com.simplewebframework.configClass.DriverConfig;
 
 public class ChromeDriverFactory extends AbstractWebDriverFactory implements IWebDriverFactory {
 
-    public ChromeDriverFactory(final DriverConfig cfg) {
-        super(cfg);
-    }
+	public ChromeDriverFactory() {
 
+    }
+    
     protected WebDriver createNativeDriver() {
-        return new ChromeDriver(new ChromeCapabilitiesFactory().createCapabilities(webDriverConfig));
+        //return new ChromeDriver(new ChromeCapabilitiesFactory().createCapabilities(webDriverConfig));
+    	return new ChromeDriver(new ChromeCapabilitiesFactory().createCapabilities());
     }
 
     @Override
     public WebDriver createWebDriver() throws IOException {
-        DriverConfig cfg = this.getWebDriverConfig();
-
-        driver = createNativeDriver();
-
+  
+    	driver = createNativeDriver();
         setImplicitWaitTimeout(AppConfig.IMPLICIT_WAIT_TIMEOUT);
         if (AppConfig.PAGE_LOAD_TIMEOUT >= 0) {
             setPageLoadTimeout(AppConfig.PAGE_LOAD_TIMEOUT);

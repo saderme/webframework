@@ -17,8 +17,6 @@ public class AppConfig {
     public static int IMPLICIT_WAIT_TIMEOUT;
     public static int EXPLICIT_WAIT_TIME_OUT; 
     public static String DRIVER_BIN_PATH;   
-    public static String LOG4J_PATH;   
-    public static String EXTENT_REPORT_PATH;       
     public static String APP_URL;   
     public static int PAGE_LOAD_TIMEOUT;   
 
@@ -27,8 +25,6 @@ public class AppConfig {
  		AppConfig.IMPLICIT_WAIT_TIMEOUT = ObjectReader.reader.getImpliciteWait();
  		AppConfig.EXPLICIT_WAIT_TIME_OUT = ObjectReader.reader.getExplicitWait();
  		AppConfig.DRIVER_BIN_PATH = ObjectReader.reader.getDriverBinPath();
- 		AppConfig.LOG4J_PATH = ObjectReader.reader.getLog4jPath();
- 		AppConfig.EXTENT_REPORT_PATH = ObjectReader.reader.getExtentReportPath();
  		AppConfig.APP_URL = ObjectReader.reader.getUrl();  	
  		AppConfig.PAGE_LOAD_TIMEOUT = ObjectReader.reader.getPageLoadTime();  	    	
     }

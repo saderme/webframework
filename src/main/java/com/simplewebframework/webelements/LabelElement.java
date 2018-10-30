@@ -23,7 +23,7 @@ public class LabelElement extends HtmlElement {
 
     @Override
     public String getText() {
-    	TestLogger.logInfo("get text from " + toHTML());
+    	TestLogger.logRepInfo("get text from " + toHTML());
         return super.getText();
     }
 

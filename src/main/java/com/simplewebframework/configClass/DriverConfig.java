@@ -29,7 +29,7 @@ public class DriverConfig {
     }
   
     public void setBrowser(final String sbrowser) {
-    	browser.setBrowserType(sbrowser);
+    	browser.setBrowserStrVal(sbrowser);
     }
       
     public void setDriver(final WebDriver driver) {

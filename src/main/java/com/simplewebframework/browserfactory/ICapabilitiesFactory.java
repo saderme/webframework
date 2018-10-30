@@ -19,6 +19,6 @@ import com.simplewebframework.configClass.DriverConfig;
 
 public interface ICapabilitiesFactory {
 
-    DesiredCapabilities createCapabilities(DriverConfig cfg);
+    DesiredCapabilities createCapabilities();
 
 }

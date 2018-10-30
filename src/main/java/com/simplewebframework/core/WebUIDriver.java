@@ -13,13 +13,13 @@
 
 package com.simplewebframework.core;
 
-import java.net.URISyntaxException;
 import java.util.Date;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+
 import com.simplewebframework.browserfactory.ChromeDriverFactory;
-import com.simplewebframework.browserfactory.IWebDriverFactory;
-import com.simplewebframework.configClass.DriverConfig;
+import com.simplewebframework.configClass.AppConfig;
 
 /**
  * This class provides factory to create webDriver session.
@@ -27,143 +27,159 @@ import com.simplewebframework.configClass.DriverConfig;
 public class WebUIDriver {
 
     private static ThreadLocal<WebDriver> driverSession = new ThreadLocal<WebDriver>();
-    private static ThreadLocal<WebUIDriver> uxDriverSession = new ThreadLocal<WebUIDriver>();
-    private IWebDriverFactory webDriverBuilder;
-    private WebDriver driver;    
-    private static DriverConfig config = new DriverConfig();
+    private static ThreadLocal<BrowserType> browser = new ThreadLocal<BrowserType>();
+    private static WebDriver driver = null;
     
-    public WebUIDriver() {
-        uxDriverSession.set(this);
+    public WebUIDriver(String browserStrVal) throws Exception {
+    	driver = createDriver(browserStrVal);
+    	//driverSession.set(createDriver(browserStrVal));
     }
 
-    public WebUIDriver(final String browser) {
+    public static WebDriver createDriver(String browserStrVal) throws Exception {
+		if (driverSession.get() == null) {
+			//browser.get().setBrowserStrVal(browserStrVal);
+			TestLogger.logConsole(Thread.currentThread() + ":" + new Date()	+ ":::Start creating web driver for browser: " + browserStrVal);
+
+			if (browserStrVal.equalsIgnoreCase("Chrome")) {
+				ChromeDriverFactory cdf = new ChromeDriverFactory();
+				driver = cdf.createWebDriver();
+				BrowserType bt = BrowserType.Chrome;
+				browser.set(bt);
+				driverSession.set(driver);
+			} else {
+				throw new RuntimeException("Unsupported browser: " + browser);
+			}
+			TestLogger.logConsole(Thread.currentThread() + ":" + new Date()	+ ":::Finish creating web driver for browser: " + browserStrVal);
+		}
+        return driverSession.get();
+    }   
+    
+    public void setDriver(final WebDriver driver) {
+    	driverSession.set(driver);
+    }    
+ 
+    public static WebDriver getWebDriver() {
+          return driverSession.get();
+    }
+    
+    public static WebDriver getWebDriver(String browserStrVal) throws Exception {
+    	return createDriver(browserStrVal);
+    }
+    
+/*    public WebUIDriver(final String browser) {
         this.setBrowser(browser);
-        uxDriverSession.set(this);
-    }
+        //uxDriverSession.set(this);
+    }*/
 
-    public WebDriver createWebDriver() throws Exception {
+    public static BrowserType getBrowserType() {
+        return browser.get();
+    }
+    
+
+ 
+/*    public void setBrowser(final BrowserType browser) {
+        this.browser = browser;
+    }
+  
+    public void setBrowserStrVal(String sbrowser) {
+    	browser.setBrowserStrVal(sbrowser);
+    }*/
+      
+
+    
+/*    public WebDriver createWebDriver() throws Exception {
     	TestLogger.logConsole(Thread.currentThread() + ":" + new Date() + ":::Start creating web driver from config instance: " + this.getBrowser());
         driver = createDriver(config.getBrowser().getBrowserType());
         driverSession.set(driver);
     	TestLogger.logConsole(Thread.currentThread() + ":" + new Date() + ":::Finish creating web driver from config instance: " + this.getBrowser());
         return driver;
-    }
+    }*/
 
-    public WebDriver createWebDriver(String browser) throws Exception {
+/*    public WebDriver createWebDriver(String browser) throws Exception {
     	TestLogger.logConsole(Thread.currentThread() + ":" + new Date() + ":::Start creating web driver for browser: " + this.getBrowser());
         driver = createDriver(browser);
         driverSession.set(driver);
     	TestLogger.logConsole(Thread.currentThread() + ":" + new Date() + ":::Finish creating web driver for browser: " + this.getBrowser());
         return driver;
-    }   
+    }   */
 
-    public WebDriver createDriver(final String browser) throws Exception {
-        WebDriver driver = null;
-        config.setBrowser(BrowserType.getBrowserType(browser));
-        
-        if (config.getBrowser() == BrowserType.Chrome) {
-			webDriverBuilder = new ChromeDriverFactory(config);
-		}
-        else {
-			throw new RuntimeException("Unsupported browser: " + browser);
-		}
-        
-        synchronized (this.getClass()) {
-            driver = webDriverBuilder.createWebDriver();
-            driverSession.set(driver);
-        }
-        return driver;
-    }   
+
     
     /**
      * Get EventFiringWebDriver.
      *
      * @return webDriver
      */
-    public static WebDriver getWebDriver() {
+/*    public static WebDriver getWebDriver() {
         return getWebDriver(false);
-    }
+    }*/
+    
 
-    /**
-     * Returns WebDriver instance. Creates a new WebDriver Instance if it is null and isCreate is true.
-     *
-     * @param isCreate create webdriver or not
-     * @return
-     */
-    public static WebDriver getWebDriver(final Boolean isCreate) {
-        if (driverSession.get() == null && isCreate) {
-            try {
-                getWebUIDriver().createWebDriver();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        return driverSession.get();
-    }
 
     /**
      * Returns WebUIDriver instance Creates new WebUIDriver instance if it is null.
      *
      * @return
      */
-    public static WebUIDriver getWebUIDriver() {
+/*    public static WebUIDriver getWebUIDriver() {
         if (uxDriverSession.get() == null) {
             uxDriverSession.set(new WebUIDriver());
         }
 
         return uxDriverSession.get();
-    }
+    }*/
 
 
-    public String getBrowser() {
+/*    public String getBrowser() {
         return config.getBrowser().getBrowserType();
-    }
+    }*/
 
    
-    public static DriverConfig getConfig() {
+/*    public static DriverConfig getConfig() {
         return config;
-    }
+    }*/
 
 
   
-    public IWebDriverFactory getWebDriverBuilder() {
+/*    public IWebDriverFactory getWebDriverBuilder() {
         return webDriverBuilder;
-    }
+    }*/
 
   
-    public void setBrowser(final String browser) {
+/*    public void setBrowser(final String browser) {
         config.setBrowser(BrowserType.getBrowserType(browser));
     }
 
     public void setConfig(final DriverConfig config) {
         this.config = config;
-    }
+    }*/
 
 
-    public void setWebDriverBuilder(final IWebDriverFactory builder) {
+/*    public void setWebDriverBuilder(final IWebDriverFactory builder) {
         this.webDriverBuilder = builder;
-    }
+    }*/
 
  
     public static void cleanUp() {
-        IWebDriverFactory iWebDriverFactory = getWebUIDriver().webDriverBuilder;
-        if (iWebDriverFactory != null) {
-            iWebDriverFactory.cleanUp();
-        } else {
-            WebDriver driver = driverSession.get();
-            if (driver != null) {
-                try {
-                    driver.quit();
-                } catch (WebDriverException ex) {
-                    ex.printStackTrace();
-                }
-
-                driver = null;
+    	WebDriver driver = driverSession.get();
+    	if (driver != null) {
+            try {
+                driver.quit();
+            } catch (WebDriverException ex) {
+                ex.printStackTrace();
             }
-        }
 
+            driver = null;
+        }
         driverSession.remove();
-        uxDriverSession.remove();
+        browser.remove();
+    }
+    
+    public int getExplicitWaitTimeout() {
+        if (AppConfig.EXPLICIT_WAIT_TIME_OUT < AppConfig.IMPLICIT_WAIT_TIMEOUT) {
+            return AppConfig.IMPLICIT_WAIT_TIMEOUT;
+        } else {
+            return AppConfig.EXPLICIT_WAIT_TIME_OUT;
+        }
     }
 }

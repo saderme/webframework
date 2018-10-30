@@ -21,6 +21,7 @@ C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebfra
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\application\pageobjects\idvPartialPasswordPage.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\configReader\PropertyReader.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\customexception\WebSessionEndedException.java
+C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\HashCodeGenerator.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\Locator.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\WebUtility.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\BaseTestPlan.java
@@ -34,7 +35,6 @@ C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebfra
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\Retry.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\browserfactory\ICapabilitiesFactory.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\CustomAssertion.java
-C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\AssertionHelper.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\DefaultXmlSuite.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\Filter.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\webelements\ImageElement.java
@@ -49,12 +49,12 @@ C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebfra
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\customexception\CustomSeleniumTestsException.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\WebUIDriver.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\application\pageobjects\LoginPage.java
+C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\ScreenshotUtil.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\webelements\ButtonElement.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\configClass\DriverConfig.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\webelements\TextFieldElement.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\FileUtility.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\ResourceHelper.java
-C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\core\TearDownService.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\webelements\RadioButtonElement.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\CSVHelper.java
 C:\Users\IBM_ADMIN\eclipse-workspace\webframework\src\main\java\com\simplewebframework\helpers\XMLUtility.java

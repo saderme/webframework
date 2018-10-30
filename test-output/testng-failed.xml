@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="com.simplewebframework.extent.ExtentListener"/>
   </listeners>
-  <test thread-count="3" verbose="2" name="WebTest - Factory with Data Provider test(failed)" parallel="instances">
+  <test thread-count="3" verbose="2" name="Factory with Data Provider(failed)" parallel="instances">
+    <parameter name="softassert" value="false"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="com.test.testscripts.testfactory.TestNG_Factory_DataProvider">
@@ -12,13 +13,11 @@
           <include name="beforeTest"/>
           <include name="afterTestSuite"/>
           <include name="afterTestMethod"/>
-          <include name="testNextisEnabled"/>
-          <include name="testNextisEnabled"/>
-          <include name="testNextisEnabled"/>
+          <include name="testNextisEnabled" invocation-numbers="0"/>
           <include name="beforeTestSuite"/>
           <include name="beforeTestMethod"/>
         </methods>
       </class> <!-- com.test.testscripts.testfactory.TestNG_Factory_DataProvider -->
     </classes>
-  </test> <!-- WebTest - Factory with Data Provider test(failed) -->
+  </test> <!-- Factory with Data Provider(failed) -->
 </suite> <!-- Failed suite [Selenium Web Framework with Factory and Data Provider] -->

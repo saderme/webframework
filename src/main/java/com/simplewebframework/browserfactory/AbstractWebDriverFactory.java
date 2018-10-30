@@ -24,23 +24,22 @@ import com.simplewebframework.core.WebUIDriver;
 
 public abstract class AbstractWebDriverFactory {
 
-    protected DriverConfig webDriverConfig;
     protected WebDriver driver;
+    
+    public AbstractWebDriverFactory() {
 
-    public AbstractWebDriverFactory(final DriverConfig cfg) {
-        this.webDriverConfig = cfg;
     }
-
+    
     public void cleanUp() {
         try {
             if (driver != null) {
                 try {
-                    TestLogger.logInfo("quiting webdriver" + Thread.currentThread().getId());
+                    TestLogger.logRepInfo("quiting webdriver" + Thread.currentThread().getId());
                     driver.quit();
                 } catch (WebDriverException ex) {
-                	TestLogger.logInfo("Exception encountered when quiting driver: "
-                            + WebUIDriver.getWebUIDriver().getConfig().getBrowser().name() + ":" + ex.getMessage());
-                }
+ /*               	TestLogger.logRepInfo("Exception encountered when quiting driver: "
+                            + WebUIDriver.getWebDriver()..getConfig().getBrowser().name() + ":" + ex.getMessage());
+*/                }
 
                 driver = null;
             }
@@ -62,10 +61,6 @@ public abstract class AbstractWebDriverFactory {
         return driver;
     }
 
-    public DriverConfig getWebDriverConfig() {
-        return webDriverConfig;
-    }
-
     public void setImplicitWaitTimeout(final double timeout) {
         if (timeout < 1) {
             driver.manage().timeouts().implicitlyWait((long) (timeout * 1000), TimeUnit.MILLISECONDS);
@@ -82,7 +77,4 @@ public abstract class AbstractWebDriverFactory {
         this.driver = driver;
     }
 
-    public void setWebDriverConfig(final DriverConfig cfg) {
-        this.webDriverConfig = cfg;
-    }
 }

@@ -2,13 +2,16 @@ package com.test.testscripts.testfactory;
 
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITest;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.application.dataprovider.BBOSTestAccount;
@@ -17,6 +20,7 @@ import com.application.pageobjects.LoginPage;
 import com.application.pageobjects.idvPartialPasswordPage;
 import com.simplewebframework.configClass.TestConfig;
 import com.simplewebframework.core.BaseTestPlan;
+import com.simplewebframework.core.WebUIDriver;
 /* The data provider class is stored in a separate external class which is specified by the dataProviderClass variable*/
 import com.simplewebframework.helpers.ExcelHelper;
 
@@ -25,7 +29,8 @@ public class TestNG_Factory_DataProvider extends BaseTestPlan implements ITest {
 	 * Need testConfig Class so we can use TestConfig.TEST_DATA_PATH. When using Factory, this is not initialised
 	 * so therefore need to instantiate and force creation of TestConfig static variables.**/
 	private static TestConfig testconfig= new TestConfig("testconfig.properties");  //need this to use the test
-
+	
+	//private WebDriver webDriver;
 	private String login;
     private String email;
     private String password;
@@ -56,9 +61,12 @@ public class TestNG_Factory_DataProvider extends BaseTestPlan implements ITest {
 	}	
 	*/
 	
-	@Test(description = "Verify Next button is enabled" )
-	public void testNextisEnabled() throws Exception{
+	@Test(description = "Verify Next button is enabled" ,
+	      groups = { "idv","logintest" })
+	@Parameters({"browser"})
+	public void testNextisEnabled(String browser) throws Exception{
 		System.out.println("Test Data " + login + email+ password + runmode);
+    	//webDriver =  WebUIDriver.createDriver(browser);
 		LoginPage loginPage = new LoginPage();
        loginPage.assertElementEnabled(loginPage.getNextBtn());
 	}
@@ -77,9 +85,15 @@ public class TestNG_Factory_DataProvider extends BaseTestPlan implements ITest {
 	@Override
 	public String getTestName() {
         StringBuilder builder = new StringBuilder();
-        builder.append(getClass().getSimpleName() + "[login=").append(this.login).append(", email=").append(this.email).append(", password=").append(this.password).append(", runmode=").append(this.runmode).append("]");
+        //builder.append(getClass().getSimpleName() + "[login=").append(this.login).append("_email=").append(this.email).append("_password=").append(this.password).append("]");
+        builder.append(getClass().getSimpleName() + "[login=").append(this.login).append("]");
         return builder.toString();
 	}
+
+/*    @AfterTest(alwaysRun = true)
+    public void afterTest() {
+        WebUIDriver.cleanUp();    	
+    }*/
 	
 /*	@Override
     public String getTestName() {

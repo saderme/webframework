@@ -3,9 +3,11 @@
 	verbose="2" thread-count="3">
 	<listeners>
 		 <listener class-name="com.simplewebframework.extent.ExtentListener" /> 	
+ 		 <listener class-name="com.simplewebframework.core.TestRetryListener" /> 	
 	</listeners>
-     <test name="WebTest - Factory with Data Provider test">
+     <test name="Factory with Data Provider">
        	<parameter name="browser" value="Chrome" />  
+       	<parameter name="softassert" value="false" /> 
         <classes>
             <class name="com.test.testscripts.testfactory.TestNG_Factory_DataProvider" />
         </classes>

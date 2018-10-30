@@ -25,7 +25,7 @@ public class LinkElement extends HtmlElement {
 
     @Override
     public void click() {
-    	TestLogger.logInfo("click on " + toHTML());
+    	TestLogger.logRepInfo("click on " + toHTML());
         super.click();
     }
 

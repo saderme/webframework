@@ -30,13 +30,13 @@ public class DataProviderCentral {
 	//Primitive Login Data from excel spreadsheet
 	@DataProvider(name = "BBOS_LOGIN_DATA")
 	public static Object[][] createBBOSTestAccounts() {
-		return ExcelHelper.getExcelData(TestConfig.getConfigPath(), "loginData");
+		return ExcelHelper.getExcelData(TestConfig.getTestDataPath(), "loginData");
 	}
 	
 	//Class Login Data from excel spreadsheet
 	@DataProvider(name = "BBOS_DATA_CLASS")
 	public static Object[][] createLoginData() {
-		return ExcelHelper.getExcelDataToBBOS(TestConfig.getConfigPath(), "loginData");
+		return ExcelHelper.getExcelDataToBBOS(TestConfig.getTestDataPath(), "loginData");
 	}	
 	
 	//Iterator returned from excel spreadsheet. Cannot be used with Factory.

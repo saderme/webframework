@@ -59,7 +59,7 @@ public class PropertyReader implements ConfigReader {
 		if(System.getProperty("testdatapath")!=null){
 			return System.getProperty("testdatapath");
 		}
-		return OR.getProperty("testdatapath");
+		return ResourceHelper.getResourcePath(OR.getProperty("testdatapath"));
 	}
 	
 	
@@ -79,7 +79,7 @@ public class PropertyReader implements ConfigReader {
 		if(System.getProperty("screenshotpath")!=null){
 			return System.getProperty("screenshotpath");
 		}
-		return OR.getProperty("screenshotpath");
+		return ResourceHelper.getResourcePath((OR.getProperty("screenshotpath")));
 	}	
 	
 	
@@ -113,7 +113,45 @@ public class PropertyReader implements ConfigReader {
 		if(System.getProperty("log4jpath")!=null){
 			return System.getProperty("log4jpath");
 		}
-		return OR.getProperty("log4jpath");
+		return ResourceHelper.getResourcePath(OR.getProperty("log4jpath"));
+	}
+
+	@Override
+	public String getDefaultOS() {
+		// TODO Auto-generated method stub
+		if(System.getProperty("defaultOS")!=null){
+			return System.getProperty("defaultOS");
+		}else
+		{
+			System.setProperty("defaultOS", OR.getProperty("defaultOS"));
+		}
+		return OR.getProperty("defaultOS");
+	}
+
+	@Override
+	public String getExtentReportPathWin() {
+		// TODO Auto-generated method stub
+		if(System.getProperty("extentreportpathWin")!=null){
+			return System.getProperty("extentreportpathWin");
+		}
+		return ResourceHelper.getResourcePath(OR.getProperty("extentreportpathWin"));
+	}
+
+	@Override
+	public String getExtentReportPathMac() {
+		// TODO Auto-generated method stub
+		if(System.getProperty("extentreportpathMac")!=null){
+			return System.getProperty("extentreportpathMac");
+		}
+		return OR.getProperty("extentreportpathMac");
+	}
+
+	@Override
+	public String getExtentReportFileName() {
+		if(System.getProperty("extentreportpathFileName")!=null){
+			return System.getProperty("extentreportpathFileName");
+		}
+		return OR.getProperty("extentreportpathFileName");
 	}
 	
 }

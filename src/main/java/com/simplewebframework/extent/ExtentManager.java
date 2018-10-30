@@ -11,6 +11,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.simplewebframework.configClass.DriverConfig;
+import com.simplewebframework.configClass.TestConfig;
 import com.simplewebframework.core.WebUIDriver;
 import com.simplewebframework.helpers.ResourceHelper;
 
@@ -18,11 +19,18 @@ public class ExtentManager {
 	
     private static ExtentReports extent;
     private static Platform platform;
-    private static String reportFileName = "ExtentReports-Version3-Test-Automaton-Report.html";
-    private static String macPath = System.getProperty("user.dir")+ "/TestReport";
-    private static String windowsPath = System.getProperty("user.dir")+ "\\TestReport";
-    private static String macReportFileLoc = macPath + "/" + reportFileName;
-    private static String winReportFileLoc = windowsPath + "\\" + reportFileName;
+  //  private static String reportFileName = "ExtentReports-Version3-Test-Automaton-Report.html";
+  //  private static String macPath = System.getProperty("user.dir")+ "/TestReport";
+  //  private static String windowsPath = System.getProperty("user.dir")+ "\\TestReport";
+  //  private static String macReportFileLoc = macPath + "/" + reportFileName;
+  //  private static String winReportFileLoc = windowsPath + "\\" + reportFileName;
+      private static String defaultOS = TestConfig.DEFAULT_OS;
+      private static String reportFileName = TestConfig.EXTENT_REPORT_FILENAME;
+      private static String macPath = TestConfig.EXTENT_REPORT_PATH_MAC;
+      private static String windowsPath = TestConfig.EXTENT_REPORT_PATH_WIN;
+      private static String macReportFileLoc = TestConfig.EXTENT_REPORT_PATH_MAC + "/" + TestConfig.EXTENT_REPORT_FILENAME;
+      private static String winReportFileLoc = TestConfig.EXTENT_REPORT_PATH_WIN + "\\" + TestConfig.EXTENT_REPORT_FILENAME;   
+    
  
     public static ExtentReports getInstance() {
         if (extent == null)
@@ -31,7 +39,7 @@ public class ExtentManager {
     }
  
     //Create an extent report instance
-    public static ExtentReports createInstance() {
+    public synchronized  static ExtentReports createInstance() {
         platform = getCurrentPlatform();
         String fileName = getReportFileLocation(platform);
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
@@ -55,6 +63,28 @@ public class ExtentManager {
             case MAC:
                 reportFileLocation = macReportFileLoc;
                 createReportPath(macPath);
+                System.out.println("ExtentReport Path for MAC: " + reportFileLocation + "\n");
+                break;
+            case WINDOWS:
+                reportFileLocation = winReportFileLoc;;
+                createReportPath(windowsPath);
+                System.out.println("ExtentReport Path for WINDOWS: " + reportFileLocation + "\n");
+                break;
+            default:
+                System.out.println("ExtentReport path has not been set! There is a problem!\n");
+                break;
+        }
+        
+        return reportFileLocation;
+    }
+    
+/*    //Select the extent report file location based on platform
+    private static String getReportFileLocation (Platform platform) {
+        String reportFileLocation = null;
+        switch (platform) {
+            case MAC:
+                reportFileLocation = macReportFileLoc;
+                createReportPath(macPath);
                 System.out.println("ExtentReport Path for MAC: " + macPath + "\n");
                 break;
             case WINDOWS:
@@ -67,7 +97,7 @@ public class ExtentManager {
                 break;
         }
         return reportFileLocation;
-    }
+    }*/
  
     //Create the report path if it does not exist
     private static void createReportPath (String path) {
@@ -86,7 +116,8 @@ public class ExtentManager {
     //Get current platform
     private static Platform getCurrentPlatform () {
         if (platform == null) {
-            String operSys = System.getProperty("os.name").toLowerCase();
+           // String operSys = System.getProperty("defaultOS").toLowerCase();
+            String operSys = TestConfig.DEFAULT_OS.toLowerCase();
             if (operSys.contains("win")) {
                 platform = Platform.WINDOWS;
             } else if (operSys.contains("nix") || operSys.contains("nux")

@@ -37,7 +37,7 @@ public class WebUtility {
      */
     public void resizeWindow(final int width, final int height) {
         try {
-            TestLogger.logInfo("Resize browser window to width " + width + " height " + height);
+            TestLogger.logRepInfo("Resize browser window to width " + width + " height " + height);
 
             Dimension size = new Dimension(width, height);
             driver.manage().window().setPosition(new Point(0, 0));
@@ -47,7 +47,7 @@ public class WebUtility {
 
     public void maximizeWindow() {
         try {
-            BrowserType browser = BrowserType.getBrowserType(WebUIDriver.getWebUIDriver().getBrowser());
+            BrowserType browser = WebUIDriver.getBrowserType();
             if (browser == BrowserType.Android || browser == BrowserType.IPhone) {
                 return;
             }
@@ -59,7 +59,7 @@ public class WebUtility {
                 ((JavascriptExecutor) driver).executeScript(
                     "if (window.screen){window.moveTo(0, 0);window.resizeTo(window.screen.availWidth,window.screen.availHeight);}");
             } catch (Exception ignore) {
-                TestLogger.logInfo("Unable to maximize browser window. Exception occured: " + ignore.getMessage());
+                TestLogger.logRepInfo("Unable to maximize browser window. Exception occured: " + ignore.getMessage());
             }
         }
     }
@@ -68,7 +68,7 @@ public class WebUtility {
        // WebUIDriver.getWebUIDriver().setMode("ExistingGrid");
        // WebUIDriver.getWebUIDriver().setAppUrl(" ");
 
-        WebDriver driver = WebUIDriver.getWebDriver(true);
+        WebDriver driver = WebUIDriver.getWebDriver();
         System.out.print(driver.manage().window().getSize().width + ":" + driver.manage().window().getSize().height);
     }
 
